@@ -161,7 +161,7 @@ export function PaymentsPage() {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">
-                    Base Amount ($)
+                    Base Amount (AED)
                   </label>
                   <input
                     type="number"

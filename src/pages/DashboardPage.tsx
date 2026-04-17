@@ -4,7 +4,7 @@ import { leaveService } from '../services/leaveService';
 import { fineService } from '../services/fineService';
 import { activityService, ActivityLog } from '../services/activityService';
 import { Users, Calendar, AlertCircle, TrendingUp } from 'lucide-react';
-
+import { LucideIcon } from 'lucide-react';
 interface DashboardStats {
   totalRiders: number;
   activeLeavesToday: number;
@@ -66,7 +66,8 @@ export function DashboardPage() {
     value,
     color,
   }: {
-    icon: React.ComponentType<{ size: number }>;
+    //icon: React.ComponentType<{ size: number }>;
+    icon: LucideIcon;
     label: string;
     value: number | string;
     color: string;
@@ -114,8 +115,9 @@ export function DashboardPage() {
         <StatCard
           icon={TrendingUp}
           label="Total Fines Amount"
-          value={`$${stats.totalFinesAmount.toFixed(2)}`}
-          color="#EF4444"
+         // value={`$${stats.totalFinesAmount.toFixed(2)}`}
+         value={`د.إ ${stats.totalFinesAmount.toFixed(2)}`} 
+         color="#EF4444"
         />
       </div>
 

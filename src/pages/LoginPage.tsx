@@ -2,6 +2,9 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../store/authStore';
 import { Lock, Mail } from 'lucide-react';
+//import logo from './assets/logo.jpg';
+import logo from '../assets/logo.jpg';
+
 
 export function LoginPage() {
   const [email, setEmail] = useState('');
@@ -31,6 +34,12 @@ export function LoginPage() {
       <div className="w-full max-w-md">
         <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
           <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-8 py-12">
+           <img
+   src={logo} // 2. Use the imported variable here src="/logo.jpg"
+    alt="Company Logo"
+    className="w-20 h-20 mx-auto mb-6"
+  />
+           
             <h1 className="text-4xl font-bold text-white mb-2">Rear</h1>
             <p className="text-blue-100">HR Portal for Riders</p>
           </div>

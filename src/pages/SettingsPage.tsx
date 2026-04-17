@@ -40,9 +40,8 @@ export function SettingsPage() {
                 Default Currency
               </label>
               <select className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none">
-                <option>USD ($)</option>
-                <option>EUR (€)</option>
-                <option>GBP (£)</option>
+                <option>AED (د.إ)</option>
+                
               </select>
             </div>
 
