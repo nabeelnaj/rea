@@ -159,7 +159,7 @@ export function FinesPage() {
                 </div>
 
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Amount ($)</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Amount (AED (د.إ))</label>
                   <input
                     type="number"
                     step="0.01"
